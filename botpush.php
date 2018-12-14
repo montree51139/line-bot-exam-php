@@ -17,7 +17,6 @@ $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
- <input type="submit" value="Submit">
 
 
 
