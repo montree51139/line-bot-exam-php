@@ -13,11 +13,11 @@ $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
 $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello world');
-$response = $bot->pushMessage($pushID, $textMessageBuilder);
+<button type="submit"$response = $bot->pushMessage($pushID, $textMessageBuilder);value="Submit">Submit</button>
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
-<button type="submit" value="Submit">Submit</button>
+ 
 ?>
 
 
