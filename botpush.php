@@ -7,12 +7,12 @@ $access_token = 'NVUaJzyIa7s4wNxVEE0VNnZqxV8soHPZa7qPIqmdwdRk1IKB55wFYAD2H1PwyUD
 
 $channelSecret = '80aab8b2e9f7734926d37a98834b5f7a';
 
-$pushID = 'Uda3a5fbeeb02802ef4d405479c09df60';
+$pushID = 'Ueac469ec6c9f1c655acd64434090854c';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('อย่าโดดร่มบ่อยนะครับ เดี๋ยวหัวร้อน!!!');
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('ยินดีตอนรับ');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
