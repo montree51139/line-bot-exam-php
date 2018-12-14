@@ -12,12 +12,12 @@ $pushID = 'Ueac469ec6c9f1c655acd64434090854c';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
 
-<form action="/action_page.php" method="get">$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello world');</form>
+$textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder('hello world');
 $response = $bot->pushMessage($pushID, $textMessageBuilder);
 
 echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
-
+ <input type="submit" value="Submit">
 
 
 
